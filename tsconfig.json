@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "rootDir": "../Sistema de Gestion de Tareas-Prueba Tecnica",            // Esto obliga a que todo el código esté en la carpeta
+    
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["node", "jest", "express"]
+  },
+  "include": ["src/**/*"],         // Solo incluye archivos dentro de src
+  "exclude": ["node_modules", "**/*.test.ts"] // Evita que los tests se compilen como código de producción
+}
