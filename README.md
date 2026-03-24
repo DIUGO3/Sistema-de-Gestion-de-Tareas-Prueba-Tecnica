@@ -7,8 +7,8 @@ Backend REST desarrollado con Express, TypeScript, Prisma y PostgreSQL para aute
 - Node.js
 - Express
 - TypeScript
-- Prisma
 - PostgreSQL
+- Prisma
 - JWT
 - Zod
 - Jest
@@ -31,6 +31,8 @@ Backend REST desarrollado con Express, TypeScript, Prisma y PostgreSQL para aute
 src/
   api/
     routes/
+      auth.routes.ts
+      task.routes.ts
     auth.middleware.ts
     error.middleware.ts
     validation.middleware.ts
@@ -40,15 +42,42 @@ src/
     env.ts
     swagger.ts
   controllers/
+    auth.controller.ts
+    task.controller.ts
   persistence/
+    task.repository.ts
   schemas/
+    auth.shema.ts
+    tasks.shema.ts
   services/
+    auth.service.ts
+    task.service.ts
   test/
+    auth.integration.test.ts
+    auth.service.test.ts
+    task.service.test.ts  
   utils/
+    error.ts
+    hash.ts
+    jwt.ts
+    logger.ts
+    schema.ts
+.env.example
+.gitignore
+DEVELOPMENT LOG.md
+README.md
 app.ts
+babel.config.js
+jest.config.js
+package-lock.json
+package.json
 server.ts
+tsconfig.json
 prisma/
-```
+  migrations/
+  migration_lock.toml
+  schema.prisma
+
 
 ## Requisitos
 
